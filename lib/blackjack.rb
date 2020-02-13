@@ -35,6 +35,9 @@ def hit?(card_total)
     card_total += deal_card
   end
   if prompt_user != ("h" || "s")
+    invalid_command
+    prompt_user
+  end
   display_card_total(card_total)
 end
 
