@@ -34,11 +34,11 @@ def hit?(card_total)
   if get_user_input == "h"
     card_total += deal_card
   end
+  if prompt_user != ("h" || "s")
   display_card_total(card_total)
 end
 
 def invalid_command
-  if prompt_user !=("h" || "s" )
     puts "Please enter a valid command"
   end
 end
